@@ -1,11 +1,11 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <windows.h>
+#include "Game/Game.h"
 
 using namespace std;
 
 int main() {
-    srand((201901540)time(NULL));
+    srand(GetTickCount());
 
     Game g;
 

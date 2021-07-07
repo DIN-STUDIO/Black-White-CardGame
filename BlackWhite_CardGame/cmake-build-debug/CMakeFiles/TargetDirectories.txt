@@ -1,0 +1,3 @@
+C:/Users/W22450/Desktop/BlackWhite_CardGame/cmake-build-debug/CMakeFiles/BlackWhite_CardGame.dir
+C:/Users/W22450/Desktop/BlackWhite_CardGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/W22450/Desktop/BlackWhite_CardGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir

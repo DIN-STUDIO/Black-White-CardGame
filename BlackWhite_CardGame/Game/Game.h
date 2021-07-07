@@ -1,7 +1,7 @@
 //
 // Created by W22443 on 2021-06-26.
 //
-
+#include "../Player/Player.h"
 #ifndef BLACKWHITE_CARDGAME_GAME_H
 #define BLACKWHITE_CARDGAME_GAME_H
 

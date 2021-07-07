@@ -10,7 +10,10 @@ Card::Card() {
 }
 
 Card::Card(int n) {
-    color = 'w';
+    if (n % 2 != 0)      //  n이 홀수이면
+        color = 'w';
+    else                 //  n이 짝수이면
+        color = 'b';
     number = n;
 }
 
