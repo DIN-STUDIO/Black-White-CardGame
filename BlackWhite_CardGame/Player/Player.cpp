@@ -20,7 +20,7 @@ Player::Player() {
 void Player::randomShuffle() {
     srand(GetTickCount());
 
-    Card* temp = new Card[num_card];
+    Card temp[num_card];
 
     int random_num[num_card];
 
@@ -28,20 +28,22 @@ void Player::randomShuffle() {
         random_num[i] = rand() % num_card;
 
         temp[i] = deck[i];
-
+        deck[i] = deck[random_num[i]];
+        deck[random_num[i]] = temp[i];
     }
-
-
-
-
 }
 
-Card Player::choose(int) {
+Card Player::choose(int n) {
 
+    return deck[n];
 }
 
-int Player::search(int) {
-
+int Player::search(int n) {
+    for (int i = 0; i < num_card; i++){
+        if (n == deck[i].front())
+            break;
+    }
+    return i;
 }
 
 void Player::printFront() {
@@ -57,5 +59,6 @@ void Player::printHistory() {
 }
 
 Player::~Player() {
-
+    if (deck)
+        delete[] deck;
 }

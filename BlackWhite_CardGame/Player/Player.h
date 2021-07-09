@@ -12,8 +12,8 @@ class Player {
 public:
     Player();
     void randomShuffle();
-    Card choose(int);
-    int search(int);
+    Card choose(int n);
+    int search(int n);
     void printFront();
     void printBack();
     void printHistory();
