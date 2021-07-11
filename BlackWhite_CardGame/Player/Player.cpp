@@ -36,13 +36,14 @@ void Player::randomShuffle() {
         }
     }
     for (int j = 0; j < num_card; j++){
-        temp[i] = deck[i];
-        deck[i] = deck[random_num[i]];
-        deck[random_num[i]] = temp[i];
+        temp[j] = deck[j];
+        deck[j] = deck[random_num[j]];
+        deck[random_num[j]] = temp[j];
     }
 }
 
-Card Player::choose(int n) {
+Card Player::choose(int n) {     //  ex ) computer chose : [w]
+    // 동적 생성된 객체 배열을 어떻게 삭제....?
 
     return deck[n];
 }
